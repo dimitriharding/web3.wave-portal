@@ -138,7 +138,7 @@ export default function App() {
         notify({
           title: "Get MetaMask!",
           description:
-            "You need a crypto wallet with interact with my smart contract.",
+            "You need a crypto wallet to interact with my smart contract.",
           status: "error",
         });
         return;

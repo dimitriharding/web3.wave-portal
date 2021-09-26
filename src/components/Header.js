@@ -65,20 +65,15 @@ const Header = () => {
         justifySelf="self-start"
         onClick={mobileNav.onClose}
       />
-      <Button w="full" variant="ghost" leftIcon={<AiFillHome />}>
-        Dashboard
-      </Button>
-      <Button
-        w="full"
-        variant="solid"
-        colorScheme="brand"
-        leftIcon={<AiOutlineInbox />}
+      <Link
+        isExternal
+        aria-label="Go to the GitHub page"
+        href="https://github.com/dimitriharding/web3.wave-portal"
       >
-        Inbox
-      </Button>
-      <Button w="full" variant="ghost" leftIcon={<BsFillCameraVideoFill />}>
-        Videos
-      </Button>
+        <Button w="full" variant="ghost" leftIcon={<AiFillGithub />}>
+          Github
+        </Button>
+      </Link>
     </VStack>
   );
   return (
